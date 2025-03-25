@@ -33,6 +33,10 @@ export default defineConfig({
     // withtout inlining assets as base64:
     assetsInlineLimit: 0,
   },
+  server: {
+    allowedHosts: true,
+    host: '0.0.0.0',
+  },
   ssr: {
     optimizeDeps: {
       /**
